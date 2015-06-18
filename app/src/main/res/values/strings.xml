@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BigTwo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_search">Search</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signin_other_error">There was an issue with sign-in, please try again later.
+    </string>
+    <string name="signin_failure">Unable to sign in.</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="item_leave">Leave Game</string>
+    <string name="close_button">Close</string>
+
+    <string name="floating_add_button_content_description">New Match</string>
+
+    <string name="new_game_button">New Game</string>
+    <string name="matches_button">Matches</string>
+    <string name="play_hand_button">Play Hand</string>
+    <string name="skip_hand_button">Skip Hand</string>
+    <string name="player_icon_description">Player Icon</string>
+    <string name="start_match_button">Start Match</string>
+
+    <string name="suit_layout_text">Suit Order</string>
+    <string name="card_layout_text">Card Order</string>
+
+    <string name="winner_button">Winners</string>
+    <string name="winner_title">Winners</string>
+
+    <!--Settings Fragment-->
+    <string name="use_auto_rotate">Auto Rotate</string>
+    <string name="use_auto_rotate_description">Force auto rotation</string>
+    <string name="use_vibrator">Vibrate on Turn</string>
+    <string name="use_vibrator_description">Shake device on my turn</string>
+    <string name="use_background_image">Background Image</string>
+    <string name="use_background_image_description">Use custom background</string>
+    <string name="use_card_image">Card Image</string>
+    <string name="use_card_image_description">Use custom card back image</string>
+
+    <!--Tutorial View-->
+    <string name="tutorial_tap">Tap to a card to select it</string>
+    <string name="tutorial_swipe_up">Swipe up to play the selected hand;\n play an empty hand to skip</string>
+    <string name="tutorial_swipe_down">Swipe down to toggle your hand</string>
+    <string name="tutorial_swipe_right">Swipe left and right to pan cards</string>
+    <string name="tutorial_done_button">Done</string>
+
+    <!--Launch Fragment-->
+
+    <string name="tab_invite">Invites</string>
+    <string name="tab_my_turn">My Turn</string>
+    <string name="tab_their_turn">Their Turn</string>
+    <string name="tab_finished">Finished</string>
+
+    <string name="empty_invite_text">No invites</string>
+    <string name="empty_my_turn_text">Not your turn in any matches</string>
+    <string name="empty_their_turn_text">Not waiting for any matches</string>
+    <string name="empty_finished_text">No finished matches</string>
+    <string name="title_activity_start_match">StartMatchActivity</string>
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_new_match">NewMatchActivity</string>
+
+    <string name="text_num_cards">Cards per player</string>
+    <string name="text_num_decks">Number of decks to use</string>
+    
+    <string name="increment">+</string>
+    <string name="decrement">-</string>
+    
+    <!--Licenses-->
+
+    <!--TODO: Add dialog for libraries used-->
+
+    <string name="pager_sliding_tab_strip_license">
+        Copyright 2013 Andreas Stuetz
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+           http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+    </string>
+    <string name="item_help">Help</string>
+    <string name="text_history">History</string>
+    <string name="text_card_order_straight">Make straights use least to greatest rather than Ace to
+        Ace
+    </string>
+    <string name="text_real_time">Play match in real time</string>
+
+
+</resources>

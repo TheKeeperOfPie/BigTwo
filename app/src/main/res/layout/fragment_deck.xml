@@ -1,0 +1,171 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.winsonchiu.bigtwo.turn.DeckFragment"
+    android:paddingBottom="72dp"
+    >
+
+    <TextView
+        android:id="@+id/text_num_decks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@+id/edit_text_num_decks"
+        android:layout_toStartOf="@+id/image_num_decks_decrement"
+        android:layout_toLeftOf="@+id/image_num_decks_decrement"
+        android:layout_margin="16dp"
+        android:text="@string/text_num_decks"
+        />
+
+    <ImageButton
+        android:id="@+id/image_num_decks_decrement"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/image_num_decks_increment"
+        android:layout_alignBottom="@+id/image_num_decks_increment"
+        android:layout_toStartOf="@+id/edit_text_num_decks"
+        android:layout_toLeftOf="@+id/edit_text_num_decks"
+        android:padding="12dp"
+        android:src="@drawable/ic_remove_white_24dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_num_decks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_num_decks_increment"
+        android:layout_alignBottom="@+id/image_num_decks_increment"
+        android:layout_toStartOf="@+id/image_num_decks_increment"
+        android:layout_toLeftOf="@+id/image_num_decks_increment"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/COLOR_ACCENT"
+        android:inputType="number"
+        />
+    
+    <ImageButton
+        android:id="@+id/image_num_decks_increment"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_add_white_24dp"
+        />
+
+    <TextView
+        android:id="@+id/text_num_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@+id/edit_text_num_cards"
+        android:layout_below="@id/text_num_decks"
+        android:layout_toStartOf="@+id/image_num_cards_decrement"
+        android:layout_toLeftOf="@+id/image_num_cards_decrement"
+        android:layout_margin="16dp"
+        android:text="@string/text_num_cards"
+        />
+
+    <ImageButton
+        android:id="@+id/image_num_cards_decrement"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/image_num_cards_increment"
+        android:layout_alignBottom="@+id/image_num_cards_increment"
+        android:layout_toStartOf="@+id/edit_text_num_cards"
+        android:layout_toLeftOf="@+id/edit_text_num_cards"
+        android:padding="12dp"
+        android:src="@drawable/ic_remove_white_24dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_num_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_num_cards_increment"
+        android:layout_alignBottom="@+id/image_num_cards_increment"
+        android:layout_toStartOf="@+id/image_num_cards_increment"
+        android:layout_toLeftOf="@+id/image_num_cards_increment"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/COLOR_ACCENT"
+        android:inputType="number"
+        />
+
+    <ImageButton
+        android:id="@+id/image_num_cards_increment"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/image_num_decks_increment"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_add_white_24dp"
+        />
+
+    <TextView
+        android:id="@+id/text_card_order_straight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@+id/check_box_card_order_straight"
+        android:layout_toStartOf="@+id/check_box_card_order_straight"
+        android:layout_toLeftOf="@+id/check_box_card_order_straight"
+        android:layout_margin="16dp"
+        android:text="@string/text_card_order_straight"
+        />
+
+    <CheckBox
+        android:id="@+id/check_box_card_order_straight"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/image_num_cards_increment"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/text_real_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@+id/check_box_real_time"
+        android:layout_toStartOf="@+id/check_box_real_time"
+        android:layout_toLeftOf="@+id/check_box_real_time"
+        android:layout_margin="16dp"
+        android:text="@string/text_real_time"
+        android:visibility="gone"
+        />
+
+    <CheckBox
+        android:id="@+id/check_box_real_time"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/check_box_card_order_straight"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

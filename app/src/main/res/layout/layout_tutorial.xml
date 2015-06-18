@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tutorial_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:visibility="gone"
+    android:background="@color/DARK_GRAY_TRANSPARENT"
+    >
+
+    <TextView
+        android:id="@+id/tutorial_swipe_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/side_margin"
+        android:textColor="@color/COLOR_ACCENT"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/tutorial_swipe_down"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:minWidth="64dp"
+        android:paddingBottom="6dp"
+        android:paddingEnd="48dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="6dp"
+        android:textAllCaps="true"
+        android:id="@+id/tutorial_done_button"
+        android:layout_below="@id/tutorial_swipe_down"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/COLOR_ACCENT"
+        android:text="@string/tutorial_done_button"
+        />
+
+    <TextView
+        android:id="@+id/tutorial_swipe_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tutorial_swipe_down"
+        android:layout_margin="@dimen/side_margin"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/COLOR_ACCENT"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/tutorial_swipe_up"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tutorial_swipe_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="56dp"
+        android:textColor="@color/COLOR_ACCENT"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/tutorial_swipe_right"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tutorial_tap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tutorial_swipe_right"
+        android:layout_margin="@dimen/side_margin"
+        android:textColor="@color/COLOR_ACCENT"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/tutorial_tap"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="category_settings"
+        >
+
+        <SwitchPreference
+            android:key="use_auto_rotate"
+            android:title="@string/use_auto_rotate"
+            android:summary="@string/use_auto_rotate_description"
+            />
+
+        <SwitchPreference
+            android:key="use_vibrator"
+            android:title="@string/use_vibrator"
+            android:summary="@string/use_vibrator_description"
+            />
+
+        <SwitchPreference
+            android:key="use_background_image"
+            android:title="@string/use_background_image"
+            android:summary="@string/use_background_image_description"
+            />
+
+        <SwitchPreference
+            android:key="use_card_image"
+            android:title="@string/use_card_image"
+            android:summary="@string/use_card_image_description"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

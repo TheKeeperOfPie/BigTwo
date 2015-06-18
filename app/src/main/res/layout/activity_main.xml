@@ -1,0 +1,94 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/container_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/toolbar"
+            android:id="@+id/toolbar"
+            />
+
+        <com.winsonchiu.bigtwo.CustomSurfaceView
+            android:id="@+id/game_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:padding="0px"
+            android:layout_margin="0px"
+            />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/game_surface"
+            android:layout_alignBottom="@id/game_surface"
+            android:layout_alignStart="@id/game_surface"
+            android:layout_alignLeft="@id/game_surface"
+            android:layout_alignEnd="@id/game_surface"
+            android:layout_alignRight="@id/game_surface"
+            android:padding="0px"
+            android:layout_margin="0px"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/navigation_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="@color/DARK_THEME_BACKGROUND"
+        >
+
+        <RelativeLayout
+            android:id="@+id/nav_drawer_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/nav_drawer_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/side_margin"
+                android:layout_marginStart="@dimen/side_margin"
+                android:gravity="center_vertical"
+                android:shadowColor="@color/DARK_GRAY_OPAQUE"
+                android:shadowRadius="4"
+                android:text="@string/app_name"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/nav_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:textColor="@color/TEXT_COLOR"
+            android:dividerHeight="0px"
+            />
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
